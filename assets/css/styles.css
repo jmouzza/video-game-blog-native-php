@@ -1,0 +1,365 @@
+/*Importar la fuete*/
+@font-face{
+    font-family: "fajala";
+    src: url(../fonts/fuente.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*---GENERALES---*/
+*{
+    font-family: sans-serif, Helvetica, Arial;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+.clearfix{
+    clear: both;
+    float: none;
+}
+body{
+    background: url(../img/cubes.png) #F4F4F4;
+}
+/*---CABECERA---*/
+#cabecera{
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+/*---LOGOTIPO---*/
+
+#logo{
+    background: #fff;   
+    float: left;
+    width: 100%;
+    height: 110px;
+}
+.contenedor {
+    width: 92%;
+    margin-left: auto;
+}
+#logo img{
+ height:100px;
+ 
+}
+
+/*---MENU---*/
+#menu{
+    width: 100%;
+    height: 45px;
+    clear: both;
+    background: #007ee5;
+    border: 2px solid #695010;
+    overflow: hidden;
+}
+#menu ul{
+    list-style: none;
+    text-align: center;
+    width: 900px;
+    height: 45px;
+    margin: auto;
+}
+#menu ul li{
+    float: left;
+    line-height: 45px;
+            
+}
+#menu ul li a{
+    display: block;
+    width: 74px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+#menu ul li a:hover{
+    transition: all 300ms;
+    background: #8ca8d4;
+    font-size: 16px;
+    color: white;
+}
+/*---CONTENIDO---*/
+#contenedor{
+    width: 85%;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/*---BARRA LATERAL---*/
+.login{
+    font-family: "fajala", Arial;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #2979CD;
+}
+#sidebar{
+    float: right;
+    width: 25%;
+}
+.bloque{
+    display: block;
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.3), 0px 3px 7px rgba(0,0,0,0.3), 0px 0px 1px #FFFFFF inset, 0px -3px 2px rgba(0,0,0,0.25) inset;
+}
+.bloque h3{
+    margin-bottom: 15px;
+}
+label,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"]{
+    display: block;
+    width: 95%;
+    margin-top: 6px;
+    margin-bottom: 2px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"]{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+input[type="submit"]{
+    display: block;
+    background: #007ee5;
+    border-radius: 4px;
+    border: 1px solid #156785;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 8px;
+    color: white;
+}
+.botones{
+    width: 60%;
+    margin: 0px auto;
+    text-align: center;
+    display: block; 
+    text-decoration: none;
+    color:white;
+    padding: 6px;
+    margin-top: 9px;
+    border-radius: 3px; 
+}
+#cerrar_sesion{
+    background: #ff0000;
+    border: 1px solid #444;
+    margin-bottom: 15px;
+}
+#crear_entrada{
+    background: #339900;
+    border: 1px solid #444;
+}
+#crear_categoria{
+    background: #005299;
+    border: 1px solid #444;
+}
+#mis_datos{
+    background: #ff9900;
+    border: 1px solid #444;
+}
+#cerrar_sesion:hover{
+    //background: #2979CD;
+    transition: all 400ms;
+    transform : scale(1.05);
+    -moz-transform : scale(1.05);      /* Firefox */
+    -webkit-transform : scale(1.05);   /* Chrome - Safari */
+    -o-transform : scale(1.05); 
+}
+#crear_entrada:hover{
+    //background: #2979CD;
+    transition: all 400ms;
+    transform : scale(1.05);
+    -moz-transform : scale(1.05);      /* Firefox */
+    -webkit-transform : scale(1.05);   /* Chrome - Safari */
+    -o-transform : scale(1.05);        /* Opera */
+}
+#crear_categoria:hover{
+    //background: #2979CD;
+    transition: all 400ms;
+    transform : scale(1.05);
+    -moz-transform : scale(1.05);      /* Firefox */
+    -webkit-transform : scale(1.05);   /* Chrome - Safari */
+    -o-transform : scale(1.05);        /* Opera */
+}
+#mis_datos:hover{
+    //background: #2979CD; 
+    transition: all 400ms;
+    transform : scale(1.05);
+    -moz-transform : scale(1.05);      /* Firefox */
+    -webkit-transform : scale(1.05);   /* Chrome - Safari */
+    -o-transform : scale(1.05);        /* Opera */
+}
+input[type="submit"]:hover{
+    background: #cccccc;
+    border: 1px solid #333;
+    color: #333;
+    transition: all 200ms;
+    cursor:pointer;
+}
+#registro_completo{
+    margin: 0px;
+    margin-top: -9px;
+    margin-bottom: 10px;
+    color: green;
+    font-weight: bold;
+    font-size: 15px;
+}
+#registro_incompleto{
+    margin: 0px;
+    margin-top: -9px;
+    margin-bottom: 10px;
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+.error_registro{
+    margin: 0px;
+    margin-top: -9px;
+    margin-bottom: 10px;
+    color: red;
+    font-size: 12px;
+}
+/*---CAJA PRINCIPAL---*/
+#resultado_busqueda{
+    font-family: "fajala", Arial;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #444;
+}
+#busqueda{
+    font-family: "fajala", Arial;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #2979CD; 
+}
+#items_encontrados{
+    font-family: "fajala", Arial;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #2979CD;
+    text-align: center;
+    margin-top: 15px;
+}
+#principal{
+    float: left;
+    width: 68%;
+    min-height: 290px; 
+    background: white;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+    padding: 15px 15px 35px 15px;
+}
+#principal h1{
+    font-family: "fajala", Arial;
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: #444;
+}
+#principal a{
+    color: #333;
+}
+.entrada{
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 10px 6px 10px 6px;
+    border-radius: 3px;
+}
+.entrada:hover{
+    background: #D6D6D6;
+    color: black;
+}
+.entrada h2{
+    font-family: "fajala", Arial;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #2979CD;
+}
+.entrada p{
+    text-align: justify;    
+}
+.fecha_categoria{
+    font-size: 14px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    color: #2979CD;
+}
+#ver-todas a,
+#editar_entrada a,
+#eliminar_entrada a{
+    display: block;
+    width: 150px;
+    background: #007ee5;
+    border-radius: 4px;
+    border: 1px solid #156785;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 40px;
+    padding: 8px;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    color: white;
+    font-family: "fajala";
+}
+.datos_entrada{
+    width: 90%;
+    margin: 0px auto;
+    color: #2979CD;
+ }
+#ver-todas a:hover,
+#editar_entrada a:hover{
+    background: #cccccc;
+    border: 1px solid #333;
+    color: #333;
+    transition: all 200ms;
+}
+#eliminar_entrada a:hover{
+    background: red;
+        border: 1px solid #333;
+    transition: all 200ms;
+}
+#titulo_entrada{
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 20px;
+    color: #2979CD;
+    margin-bottom: 10px;
+}
+#descripcion_entrada{
+    width: 90%;
+    margin:0px auto;
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 30px;
+}
+/*----CREAR CATEGORIA -----*/
+.mensaje_categoria{
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: green;
+    font-size: 15px;
+    font-weight: bold;
+}
+/*---FOOTER---*/
+#pie{
+    width: 100%;
+    background: #007ee5;
+    height: 80px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    border-top: 5px solid #d9d9d9;
+}
+footer p{
+    font-family: "fajala";
+    color: #d9d9d9;
+    font-size: 22px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 2px;
+}
